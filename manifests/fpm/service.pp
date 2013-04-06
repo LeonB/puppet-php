@@ -1,5 +1,8 @@
 class php::fpm::service {
 
+	# subscribe to php config
+	Class['php::config'] ~> Class['php::fpm::service']
+
 	service { 'php5-fpm':
 		ensure     => running,
 		hasstatus  => true,
