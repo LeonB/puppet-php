@@ -14,12 +14,12 @@
 #
 class php::params {
 
-	### Application related parameters
+  ### Application related parameters
 
-	$packages = $::operatingsystem ? {
-		default => ['php5-cli', 'php5-gd', 'php5-curl']
-	}
+  $packages = $::operatingsystem ? {
+    default => ['php5-cli', 'php5-gd', 'php5-curl']
+  }
 
-	$enabled = true
+  $enabled = true
 
 }

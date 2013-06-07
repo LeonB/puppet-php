@@ -1,7 +1,7 @@
 class php::packages {
 
-	package  { $php::packages:
-		ensure => $php::ensure,
-	}
+  package  { $php::packages:
+    ensure => $php::ensure,
+  }
 
 }

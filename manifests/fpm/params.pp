@@ -14,12 +14,12 @@
 #
 class php::fpm::params {
 
-	### Application related parameters
+  ### Application related parameters
 
-	$package_name = $::operatingsystem ? {
-		default => 'php5-fpm'
-	}
+  $package_name = $::operatingsystem ? {
+    default => 'php5-fpm'
+  }
 
-	$ensure = present
+  $ensure = present
 
 }

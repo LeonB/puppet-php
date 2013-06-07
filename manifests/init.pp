@@ -1,12 +1,12 @@
 class php(
-	$packages = params_lookup( 'packages' ),
-	$enabled  = params_lookup( 'enabled' )
+  $packages = params_lookup( 'packages' ),
+  $enabled  = params_lookup( 'enabled' )
   ) inherits php::params {
 
-  	$ensure = $enabled ? {
-  		true => present,
-  		false => absent
-  	}
+    $ensure = $enabled ? {
+      true => present,
+      false => absent
+    }
 
-	include php::packages, php::config
+  include php::packages, php::config
 }
